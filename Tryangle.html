@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<style>
+			#name{
+				font-family: monospace;
+				position:absolute;
+				right: 50px;
+				bottom: 20px;
+			}
+		</style>
+	</head>
+
+	<body style=text-align:center>
+		<br>
+		<p id=name>Tryangle</p>
+    	<p id=txt></p>
+    </body>
+</html>
+
+
+<script>
+    var i;
+    var text1 = "";
+    var text2 = "";
+    var text3 = "";
+
+    for(i=0 ; i<25 ; i++){
+    	text1 = text1 + "try";
+    	text2 = text1 + "<br>";
+    	text3 = text3 + text2;
+	    }
+    document.getElementById("txt").innerHTML = text3;
+</script>
